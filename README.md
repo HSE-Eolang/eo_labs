@@ -1,25 +1,20 @@
 # eo_labs
 ## What this repository is for?
-This repository proposes a new transcompilation model of EO programs to Java source codes.  
+With a help of this repository you will get familiar with EO programming.  
 Moreover, this repository has the documentation on the language and its standard library as well as a collection of examples (see the `sandbox` directory). 
-
-The old (CQFN) model is depicted [here](https://miro.com/app/board/o9J_lM0FZHk=/).
-
-And the visualization of our model can be found [here](https://miro.com/app/board/o9J_lMMDKrk=/).  
-Also you might want to read [a draft of our paper](docs/EO%20Programming%20Language%20Transcompilation%20Model%20for%20Java%20Source%20Code%20Generation.pdf) that describes the model.
-## How is this transpiler better?
-Our transcompilation model has two great advantages:
-1. It if much faster than the CQFN original implementation.
-2. The output Java code is much easier to read and comprehend. The runtime library is also much more readable and understandable.
-
-You can see the difference in performance of the old and the new models below:
-![This model is faster!](docs/faster.png "This model is faster!") 
-Please, refer to [this Google Sheet](https://docs.google.com/spreadsheets/d/1YsalbO6piExC3begifeNNsaz7PEDsqlV3Xx7c6TGbOU/edit?usp=sharing) for more comparisons.
 
 ## Table of Contents
 - [What this repository is for?](#what-this-repository-is-for)
-- [How is this transpiler better?](#how-is-this-transpiler-better)
 - [Table of Contents](#table-of-contents)
+- [Introduction to the enviroment](#introduction-to-the-enviroment)
+  - [Analysis of the EO Concept and the Eo language](#analysis-of-the-eo-concept-and-the-eo-language)
+  - [Eolang Object-Oriented Programming Principles](#eolang-object-oriented-programming-principles)
+  - [Setting up an enviroment](#setting-up-an-enviroment)
+  - [Hello world!](#hello-world)
+- [First mathemetical operations](#first-mathemetical-operations)
+  - [Theoretical materials for operations](#theoretical-materials-for-operations)
+  - [Self-control tasks](#self-control-tasks-1)
+- [What are data type objects in EO?](#)
 - [The EO Programming Language Reference](#the-eo-programming-language-reference)
   - [Objects](#objects)
   - [Attributes](#attributes)
@@ -76,6 +71,160 @@ Please, refer to [this Google Sheet](https://docs.google.com/spreadsheets/d/1Ysa
   - [Sequencing Computations. `seq`](#sequencing-computations-seq)
   - [Mutable Storage in Memory. `memory`](#mutable-storage-in-memory-memory)
 - [How to Contribute](#how-to-contribute)
+
+
+## Introduction to the enviroment
+Object Oriented Programming (OOP) has been the dominant paradigm in the software development industry over the past decades. OOP languages, including well-known languages such as Java, C++, C# and Python, are widely used by major technology companies, software developers, and leading providers of digital products and solutions for various projects. It should be noted that virtually all key programming languages are essentially focused on supporting multiparadigm style, which allows for different style of coding in a single software project. The absence of restrictions on programming style often leads to the use of not the most reliable coding techniques, which greatly affects the reliability of programs in several areas. The existing attempts to limit the programming style, by directives, do not always lead to the desired result. In addition, supporting different programming paradigms complicates languages and tools, reducing their reliability. Moreover, the versatility of these tools is not always required everywhere. Often many programs can be developed using only the OOP paradigm.
+
+Furthermore, among language designs considered OOP, there are those that reduce the reliability of the code being developed. Therefore, the actual problem is the development of such OOP languages that provide higher reliability of programs. This is especially true for a number of critical areas of their application.
+A lot of teams and companies that use these languages suffer from the lack of quality of their projects despite the tremendous effort and resources that have been invested in their development. Many discussions concerning code quality issues appeared in the field. Mainly these focused on eliminating code smells and introducing best practices and design patterns into the process of software development. As many industry experts point out, the reason for project quality and maintainability issues might be explained by the essence of inherent flaws in the design of the programming language and the OOP paradigm itself, and not the incompetence or lack of proper care and attention of the developers involved in the coding solely [3]. Thus, it is necessary to develop new programming languages and approaches for implementing solutions in the OOP paradigm are to be developed. Some programming languages emerged based on the Java Virtual Machine to address this claim and solve the design weaknesses of Java for the sake of better quality of produced solutions based on them. These are Groovy, Scala, and Kotlin, to name a few. While many ideas these languages proposed were widely adopted by the community of developers, which led to their incorporation into the mainstream languages, some were considered rather impractical and idealistic. Nevertheless, such enthusiastic initiatives drive the whole OOP community towards better and simpler coding.
+
+The EO programming language is an object-oriented language that is being developed as an R&D solution, the purpose of which is to show that industrial programming in the pure OOP paradigm [6] is possible. The language is being developed by Huawei's “Code Quality Foundation” [laboratory](https://github.com/cqfn). The language is based on the philosophy “Elegant Objects” and a fundamentally new formal model of ɸ-calculus, which defines basic operations on objects, positioned as necessary and sufficient to achieve object-oriented properties of the language.
+In total, the model contains four basic operations: abstraction (definition of fundamentally new concept objects), application (application of abstract objects to specific cases of their use), decoration (hierarchical composition of objects), and datarization (calculation of objects or otherwise: obtaining data that the object abstracts) ... 
+
+
+### Analysis of the EO Concept and the Eo language
+Eolang is an object-oriented programming language aimed at realizing the pure concept of object-oriented programming, in which all components of a program are objects. Eolang's main goal is to prove that fully object-oriented programming is possible not only in books and abstract examples but also in real program code aimed at solving practical problems. The EO concept departs from many of the constructs typical of classical object-oriented languages such as Java [1]:
+1. Static classes and methods are a popular approach to implementing utility classes in languages such as Java, C #, Ruby. In OOP methodology, this approach is considered bad practice, since they do not allow creating objects, therefore, they are not part of the OOP paradigm. Such classes are a legacy of the procedural programming paradigm. Following the principles of OOP, developers should provide the ability for objects to manipulate data when necessary, and the implementation of the logic for working with data should be hidden from external influences.
+2.Classes are templates and behavior of objects. The Elegant Object concept refuses to use classes in favor of types that define the behavior of objects. Each object inherits from its type only its methods, while objects of the same type can have different internal structures [7].
+3. Implementation inheritance. EO does not allow inheriting the characteristics of objects, explaining that this approach turns objects into containers with data and procedures. The Eolang language developers consider inheritance to be a bad practice, as it comes from a procedural programming methodology for code reuse. Instead of inheriting implementation, the EO concept suggests creating subtypes that extend the capabilities
+of objects.
+4. Variability. In OOP, an object is immutable if its state cannot be modified after it has
+been created. An example of such an object in Java would be String. We can request the creation of new rows, but we cannot change the state of existing ones. Immutable objects have several advantages:
+- Immutable objects are easier to create, test, and use.
+- Immutable objects can be used in several threads at the same time without the risk that some thread can change the object, which can break the logic of other threads.
+- The usage of immutable objects avoids side effects.
+- Immutable objects avoid the problem of changing identity.
+- Immutable objects prevent NULL references.
+- Immutable objects are easier to cache [8].
+5. NULL. Using a NULL reference is against the concept of OOP since NULL is not an object. NULL is a null reference; a null pointer is 0x00000000 in x86 architecture. NULL references complicate the program code, as they create the need to constantly check the input data for Null. If the developer forgot to do this, there is always the risk of the application crashing with a NullPointerException. In EO, there are two approaches to creating an alternative to NULL - Null Object - an object without any properties with neutral behaviour, and throwing an exception if the object cannot be returned.
+6. Global variables and functions. In OOP methodology, objects must manipulate data, and their implementation must be hidden from outside influence. In Eolang, objects created in the global scope are assigned to the attributes of the system object, the highest level of abstraction.
+7. Reflection - the ability of the running application to manipulate the internal properties of the program itself.
+8. Typecasting - Allows you to work with the provided objects in different ways based on the class they belong to.:
+9. Primitive data types. The EO concept does not imply primitive data types, since they are not objects, which is contrary to the OOP concept.
+10.Annotations. The main problem with annotations is that they force developers to implement the functionality of the object outside the object, which is contrary to the principle of encapsulation in OOP [9].
+11. Unchecked exceptions. Unchecked exceptions hide the fact that the method might fail. The EO concept assumes that this fact must be clear and visible. When a method performs too many different functions, there are so many points at which an error can occur. The method should not throw exceptions in as many situations as possible. Such methods should be decomposed into many simpler methods, each of which can only
+throw 1 type of exception.
+12. Operators. There are no operators like +, -, *, / in EO. Numeric objects have built-in
+functions that represent mathematical operations. The creator of EO considers operators
+to be "syntactic sugar".
+13. Flow control operators (for, while, if, etc.).
+14. Syntactic sugar". The EO concept assumes the use of strict and precise syntax. Syntactic
+sugar can reduce the readability of your code and make it harder to understand.
+
+
+3. Rejection of inheritance as a composition operation.
+EO does not allow the inheritance of the attributes of objects, explaining that this approach turns objects into containers with data and procedures. Eolang developers consider inheritance to be bad practice because it comes from procedural programming methodology for code reuse. Instead of inheriting implementation, the EO concept suggests creating subtypes that extend the capabilities of objects.
+
+
+4. Immutability of objects and their fields.
+In OOP, an object is immutable if its state cannot be changed after
+was created. An example of such an object in Java would be a sequence. We can request the creation of new lines, but we are not
+we can change the state of existing ones. Immutable objects have several advantages:
+• Immutable objects are easier to create, test, and use.
+• Immutable objects can be used in multiple threads at the same time without the risk of any thread changing the object, which could break the logic of other threads.
+• Using immutable objects avoids side effects.
+• Immutable objects avoid the problem of changing identity.
+• Immutable objects disallow NULL references.
+• Immutable objects are easier to cache.
+
+
+5. Avoiding null references.
+ Using null references is against the concept of OOPand since null is not an object. Null is a null link; a null pointer is 0x00000000 on x86 architecture. Null references add complexity to your code because you need to constantly check input data for null. If the developer forgot to do this, there is always a risk of the application crashing (NullPointerException).
+There is a null alternative approach in EO:
+Null Object - an object without any properties with neutral behavior and throwing an exception if the object cannot be returned.
+
+6. Refusal from global variables and procedures.
+In OOP methodology, objects must manipulate data, and their implementation must be hidden from outside influence. In Eolang, objects created in the global scope are assigned to the attributes of the system object, the highest level of abstraction.
+
+
+ 7. Refusal of reflection.
+ That is, the ability of the running application to manipulate
+ internal properties of the program itself.
+
+
+ 8. Avoiding explicit type conversion.
+ Ability to work with provided objects in different ways depending on the class to which they belong.
+
+
+ 9. Lack of primitive data types.
+ The EO concept does not imply primitive data types as they are not objects, which is contrary to the OOP concept.
+
+
+
+ 10. Rejection of the annotating code.
+ The main problem with annotations is that they force
+ developers to implement the functionality of the object outside the object, which is contrary to the principle of encapsulation in OOP.
+
+### Eolang Object-Oriented Programming Principles
+ 
+Abstraction - in Eolang, objects are elements into which the subject area is decomposed. According to West: “Objects, as abstractions of real-world entities, are dense and integral clusters of information.
+
+Inheritance – Implementation inheritance does not exist in Eolang, as such inheritance constrains the structure and behavior of superclasses and can lead to subsequent development difficulties. Also, changes in the superclass can lead to unexpected results in the derived classes. In Eolang, inheritance is implemented through an object hierarchy and can be created using decorators. Objects in Eolang inherit only behavior, while they cannot override it, but only add new functionality.
+
+Polymorphism. There are no explicitly defined types in Eolang, the correspondence between objects is made and checked at compile time. Eolang always knows when objects are created or copied, as well as their structure. By having this information at compile-time, you can guarantee a high level of compatibility among their users' objects. 
+
+Encapsulation. The inability to make the encapsulation barrier explicit is the main reason why Eolang does not hide information about the object structure. All attributes of an object are visible to any other object. In Eolang, the main goal of encapsulation - reducing the interconnectedness between objects - is achieved in a different way. In Eolang, the density of the relationship between objects is controlled at the assembly stage. At compile time, the compiler collects information about the relationships between objects and calculates the depth for each relationship.
+
+### Setting up an enviroment
+First, clone [this](https://github.com/cqfn/eo) repo to your local machine and go
+to the `eo` directory (you will need
+[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+installed):
+
+```bash
+$ git clone https://github.com/cqfn/eo.git
+$ cd eo
+```
+Second, compile the transpiler and the runtime of the EO programming language (you will need
+[Maven 3.3+](https://maven.apache.org/)
+and [Java SDK 8+](https://www.java.com/en/download/) installed):  
+```bash
+$ mvn clean install
+```  
+*You need to run the above command only once. This will install the runtime & the transpiler to your machine.*  
+Then, compile the code of the sandbox:
+```bash
+$ cd sandbox/hse
+$ mvn clean compile
+```  
+Intermediary `*.xml` files will be generated in the `target` directory (it will
+be created). Also, there will be `*.java` and `*.class` files. Feel free to analyze
+them: EO is parsed into XML, then translated to Java, and then compiled
+by Java SDK to Java bytecode. Finally, just run the bytecode program through JRE. For example, to run the Fibonacci example, do the following:  
+
+```bash
+$ ./run.sh appFibonacci 9
+The program has dataized to: 9th Fibonacci number is 34
+
+
+real	0m0.177s
+user	0m0.175s
+sys	0m0.037s
+
+```  
+The first argument of `./run.sh` is the name of the object to be dataized, while all the other arguments are passed to that object as its free attributes.  
+
+### Hello world!
+Create new file lab1`*.eo` in sandbox folder, and enter the code below:
+```bash
++alias stdout org.eolang.io.stdout
+
+[] > lab1
+  stdout > @
+    "Hello, world!"
+
+``` 
+
+It is *important* to remember that each EO program must be ended with a new line without any symbols.
+
+Compile and run your program as it was [shown](#setting-up-an-enviroment).
+
+
+
+
+
+
 
 ## The EO Programming Language Reference
 This section covers the basic principles that the EO programming language relies on. These are objects, attributes, and four elemental operations — abstraction, application, decoration, and dataization.
