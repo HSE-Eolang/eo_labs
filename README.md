@@ -358,7 +358,6 @@ The same functionality would require the following code in EO:
        eq. (mod. year 400) 0
 ``` 
 
-
 ### Self-practice
 #TODO
 
@@ -367,6 +366,7 @@ The same functionality would require the following code in EO:
 
 ## How to work with arrays
 In order to get all the important reference material connected with arrays in EO check the [EO Reference](#the-eo-programming-language-reference).
+
 ### Theoretical materials for arrays
 
 Key materials for this section are:
