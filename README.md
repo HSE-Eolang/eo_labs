@@ -507,7 +507,7 @@ Define:
 ### Control questions
 - Objects in EO are?
 - How to output the program?
-- What is pow operation?
+- What is the pow function?
 - What does the “@” attribute mean?
 - How to format Strings in EO?
 
