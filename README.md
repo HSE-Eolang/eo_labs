@@ -204,7 +204,7 @@ And will not be introduced
 The usual inheritance is presented by decorators (@)</td>
 		<td align="center">Uses extends keyword to inherit properties of a parent class (superclass)</td>
     <td align="center">Uses extends keyword to inherit properties of a parent class (superclass)</td>
-		<td align="center">LBy default, Kotlin classes are final: they can’t be inherited.
+		<td align="center">By default, Kotlin classes are final: they can’t be inherited.
 To make a class inheritable, mark it with the open keyword</td>
 	</tr>
 	</tr>
@@ -213,7 +213,7 @@ To make a class inheritable, mark it with the open keyword</td>
 		<td align="center">Does not exist
 Will be implemented (Ad hoc polymorphism)</td>
 		<td align="center">Java provides compile time and runtime polymorphisms</td>
-    <td align="center">n Groovy, the type of the object is considered at runtime, not the type
+    <td align="center">In Groovy, the type of the object is considered at runtime, not the type
 of the reference so the method is found at runtime</td>
 		<td align="center">Kotlin supports two forms of polymorphisms in Java</td>
 	</tr>
@@ -223,7 +223,7 @@ of the reference so the method is found at runtime</td>
 		<td align="center">Presented as Atom Data Type Objects
 Atom is an of acronym "Access to Memory.</td>
 		<td align="center">Provides both primitive and non- primitive data types</td>
-    <td align="center">n Groovy supports the same number of primitive types as Java</td>
+    <td align="center">In Groovy supports the same number of primitive types as Java</td>
 		<td align="center">Kotlin’s basic data types includes Java primitive data types</td>
 	</tr>
 </table>
@@ -283,7 +283,11 @@ It is *important* to remember that each EO program must be ended with a new line
 Compile and run your program as it was [shown](#setting-up-an-enviroment).
 
 ### Control questions
-
+- What are the main differences between EO and Java?
+- What are the main differences between EO and Kotlin?
+- What are the main differences between EO and Groovy?
+- What are the core EO principles?
+#TODO
 
 ## First mathematical operations
 
