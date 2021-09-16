@@ -360,6 +360,7 @@ Atom is an of acronym "Access to Memory.</td>
 		<td align="center">=</td>
 	</tr>	
 </table>
+
 ### Setting up an enviroment
 
 First, clone [this](https://github.com/cqfn/eo) repo to your local machine and go
