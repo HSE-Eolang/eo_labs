@@ -9,14 +9,33 @@ Moreover, this repository has the documentation on the language and its standard
 - [Introduction to the enviroment](#introduction-to-the-enviroment)
   - [Analysis of the EO Concept and the Eo language](#analysis-of-the-eo-concept-and-the-eo-language)
   - [Eolang Object-Oriented Programming Principles](#eolang-object-oriented-programming-principles)
-  - [Comparison of OOP principles with Java,Groovy,Kotlin](#comparison-of-oop-principles)
+  - [Comparison of OOP principles with Java,Groovy,Kotlin](#comparison-of-oop-principles-with-java-groovy-kotlin)
   - [Setting up an enviroment](#setting-up-an-enviroment)
   - [Hello world!](#hello-world)
-  - [Control questions](#control-questions-1)
+  - [Control questions](#control-questions)
 - [First mathemetical operations](#first-mathemetical-operations)
   - [Theoretical materials for operations](#theoretical-materials-for-operations)
-  - [Self-control tasks](#self-control-tasks-1)
-- [What are data type objects in EO?](#)
+  - [Self-practice](#self-practice-1)
+  - [Control questions](#control-questions-1)
+- [How to work with arrays](#how-to-work-with-arrays)
+  - [Theoretical materials for arrays](#theoretical-materials-for-arrays)
+  - [Self-practice](#self-practice-2)
+  - [Control questions](#control-questions-2)
+- [What are the data type objects in EO](#what-are-the-data-type-objects-in-EO)
+  - [Theoretical materials for data type objects](#theoretical-materials-for-data-type-objects)
+  - [Self-practice](#self-practice-3)
+  - [Control questions](#control-questions-3)
+- [Language mechanisms that exist](#language-mechanisms-that-exist)
+  - [Theoretical materials for language mechanisms](#theoretical-materials-for-language-mechanisms)
+  - [Self-practice](#self-practice-4)
+  - [Control questions](#control-questions-4)
+- [How to add new data type objects](#how-to-add-new-data-type-objects)
+  - [Theoretical materials for creating new objects in EO](#theoretical-materials-for-creating-new-objects)
+  - [Self-practice](#self-practice-5)
+  - [Control questions](#control-questions-5)
+- [Final project](#final-project)
+- [Final test](#final-test)
+
 - [The EO Programming Language Reference](#the-eo-programming-language-reference)
   - [Objects](#objects)
   - [Attributes](#attributes)
@@ -169,6 +188,7 @@ Polymorphism. There are no explicitly defined types in Eolang, the correspondenc
 Encapsulation. The inability to make the encapsulation barrier explicit is the main reason why Eolang does not hide information about the object structure. All attributes of an object are visible to any other object. In Eolang, the main goal of encapsulation - reducing the interconnectedness between objects - is achieved in a different way. In Eolang, the density of the relationship between objects is controlled at the assembly stage. At compile time, the compiler collects information about the relationships between objects and calculates the depth for each relationship.
 
 ### Comparison of OOP principles with Java,Groovy,Kotlin
+
 <table border="2" align="center" width="50%" cellspacing="0">
 	<tr>
 		<th>Principle</th>
@@ -294,6 +314,63 @@ At first, to be able to produce mathematical programs in EO, it is *important* t
 ### Theoretical materials for operations
 
 Key materials for this section are:
+- [Objects](#objects)
+- [Attributes](#attributes)
+- [`int` Data Type Object](#int-data-type-object)
+- [Command Line Interface Output](#command-line-interface-output)
+
+The [example](https://www.eolang.org/eolang-paper.pdf) bellow shows 2 programs(In Java and EO) that determine whether the year, provided by the user as console input, is leap or not. 
+```bash
+import java.util.Scanner;
+ public class LeapYear {
+   public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+     System.out.print("Enter a year: ");
+     int year = input.nextInt();
+     boolean isLeapYear =
+       (year % 4 == 0 && year % 100 != 0) ||
+       (year % 400 == 0);
+     System.out.println(year +
+       " is a leap year? " + isLeapYear);
+} }
+``` 
+The same functionality would require the following code in EO:
+```bash
++alias org.eolang.*
+ +alias org.eolang.io.stdout
+ +alias org.eolang.io.stdin
+ +alias org.eolang.txt.scanner
+
+[args] > main
+  seq > @
+    stdout
+   "Enter a year:"
+ stdout
+   concat
+     scanner > year
+       stdin
+     .nextInt
+     " is a leap year?"
+     or.
+       and.
+         eq. (mod. year 4) 0
+         not. (eq. (mod. year 100) 0)
+       eq. (mod. year 400) 0
+``` 
+
+
+### Self-practice
+#TODO
+
+### Control questions
+#TODO
+
+## How to work with arrays
+In order to get all the important reference material connected with arrays in EO check the [EO Reference](#the-eo-programming-language-reference).
+### Theoretical materials for arrays
+
+Key materials for this section are:
+- [Arrays](#arrays)
 - [Objects](#objects)
 - [Attributes](#attributes)
 - [`int` Data Type Object](#int-data-type-object)
