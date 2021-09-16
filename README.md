@@ -10,6 +10,7 @@ Moreover, this repository has the documentation on the language and its standard
   - [Analysis of the EO Concept and the Eo language](#analysis-of-the-eo-concept-and-the-eo-language)
   - [Eolang Object-Oriented Programming Principles](#eolang-object-oriented-programming-principles)
   - [Comparison of OOP principles with Java,Groovy,Kotlin](#comparison-of-oop-principles-with-java-groovy-kotlin)
+  - [Comparison of operators and expressions][#comparison-of-operators-and-exprressions]
   - [Setting up an enviroment](#setting-up-an-enviroment)
   - [Hello world!](#hello-world)
   - [Control questions](#control-questions)
@@ -249,6 +250,116 @@ Atom is an of acronym "Access to Memory.</td>
 	</tr>
 </table>
 
+### Comparison of operators and expressions
+
+<table border="2" align="center" width="50%" cellspacing="0">
+<tr>
+		<th>Scope resolution</th>
+		<th>EO</th>
+		<th>Java</th>
+    		<th>Groovy</th>
+    		<th>Kotlin</th>
+	</tr>
+<tr>
+    <td align="center">Parenthesis</td>
+		<td align="center">()</td>
+		<td align="center">()</td>
+    		<td align="center">()</td>
+		<td align="center">()</td>
+	</tr>
+	
+<tr>
+    <td align="center">Access via object</td>
+		<td align="center">.</td>
+		<td align="center">.</td>
+    		<td align="center">.</td>
+		<td align="center">.,?.</td>
+	</tr>
+<tr>
+    <td align="center">Post Increment</td>
+		<td align="center"> </td>
+		<td align="center">++</td>
+    		<td align="center">++</td>
+		<td align="center">++</td>
+	</tr>
+<tr>
+    <td align="center">Post decrement</td>
+		<td align="center"> </td>
+		<td align="center">--</td>
+    		<td align="center">--</td>
+		<td align="center">--</td>
+	</tr>
+<tr>
+    <td align="center">Unary minus</td>
+		<td align="center">.neg</td>
+		<td align="center">-</td>
+    		<td align="center">-</td>
+		<td align="center">-</td>
+	</tr>
+<tr>
+    <td align="center">Creating object</td>
+		<td align="center"> > </td>
+		<td align="center">new</td>
+    		<td align="center">new</td>
+		<td align="center"> </td>
+	</tr>
+<tr>
+    <td align="center">Multiplicative</td>
+		<td align="center">.mul,.div,.mod</td>
+		<td align="center">*,/,%</td>
+    		<td align="center">*,/,%</td>
+		<td align="center">*,/,%</td>
+	</tr>
+<tr>
+    <td align="center">Additive</td>
+		<td align="center">.add,.sub</td>
+		<td align="center">+,-</td>
+    		<td align="center"> </td>
+		<td align="center"> </td>
+	</tr>
+<tr>
+    <td align="center">Equality</td>
+		<td align="center">.eq,.not</td>
+		<td align="center">==,!=</td>
+    		<td align="center">==,!=,===,!==</td>
+		<td align="center">==,!=,===,!==</td>
+	</tr>
+<tr>
+    <td align="center">Logical not</td>
+		<td align="center">.not</td>
+		<td align="center">!</td>
+    		<td align="center">!</td>
+		<td align="center">!</td>
+	</tr>
+<tr>
+    <td align="center">Relational</td>
+		<td align="center">.less</td>
+		<td align="center"><,<=,>,>=</td>
+    		<td align="center"><,<=,>,>=</td>
+		<td align="center"><,<=,>,>=</td>
+	</tr>
+<tr>
+    <td align="center">Logical AND</td>
+		<td align="center">.and</td>
+		<td align="center">&&</td>
+    		<td align="center">&&</td>
+		<td align="center"> </td>
+	</tr>
+<tr>
+    <td align="center">Logical OR</td>
+		<td align="center">.or</td>
+		<td align="center">||</td>
+    		<td align="center">||</td>
+		<td align="center">||</td>
+	</tr>	
+<tr>
+    <td align="center">Assignment</td>
+		<td align="center">></td>
+		<td align="center">=</td>
+    		<td align="center">=</td>
+		<td align="center">=</td>
+	</tr>	
+</table>
 ### Setting up an enviroment
 First, clone [this](https://github.com/cqfn/eo) repo to your local machine and go
 to the `eo` directory (you will need
