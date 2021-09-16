@@ -1,7 +1,7 @@
 # eo_labs
 ## What this repository is for?
 With a help of this repository you will get familiar with EO programming.  
-Moreover, this repository has the documentation on the language and its standard library as well as a collection of examples (see the `sandbox` directory). 
+Moreover, this repository has the documentation on the language and its standard library. 
 
 ## Table of Contents
 - [What this repository is for?](#what-this-repository-is-for)
@@ -9,8 +9,10 @@ Moreover, this repository has the documentation on the language and its standard
 - [Introduction to the enviroment](#introduction-to-the-enviroment)
   - [Analysis of the EO Concept and the Eo language](#analysis-of-the-eo-concept-and-the-eo-language)
   - [Eolang Object-Oriented Programming Principles](#eolang-object-oriented-programming-principles)
+  - [Comparison of OOP principles with Java,Groovy,Kotlin](#comparison-of-oop-principles)
   - [Setting up an enviroment](#setting-up-an-enviroment)
   - [Hello world!](#hello-world)
+  - [Control questions](#control-questions-1)
 - [First mathemetical operations](#first-mathemetical-operations)
   - [Theoretical materials for operations](#theoretical-materials-for-operations)
   - [Self-control tasks](#self-control-tasks-1)
@@ -166,6 +168,66 @@ Polymorphism. There are no explicitly defined types in Eolang, the correspondenc
 
 Encapsulation. The inability to make the encapsulation barrier explicit is the main reason why Eolang does not hide information about the object structure. All attributes of an object are visible to any other object. In Eolang, the main goal of encapsulation - reducing the interconnectedness between objects - is achieved in a different way. In Eolang, the density of the relationship between objects is controlled at the assembly stage. At compile time, the compiler collects information about the relationships between objects and calculates the depth for each relationship.
 
+### Comparison of OOP principles with Java,Groovy,Kotlin
+<table border="2" align="center" width="50%" cellspacing="0">
+	<tr>
+		<th>Principle</th>
+		<th>EO</th>
+		<th>Java</th>
+    <th>Groovy</th>
+    <th>Kotlin</th>
+	</tr>
+	<tr>
+    <td align="center">Abstraction</td>
+		<td align="center">Exists as the operation of
+declaring a new
+object by making
+a copy of another
+object</td>
+		<td align="center">Exist as a class declared with the “abstract” keyword</td>
+    <td align="center">Exist as a class declared with the “abstract” keyword</td>
+		<td align="center">Like Java, abstract keyword is used to declare abstract classes in Kotlin</td>
+	</tr>
+  	<tr>
+    <td align="center">Encapsulation</td>
+		<td align="center">Does not exist
+And will not be introduced. All attributes are publicly
+available to every object</td>
+		<td align="center">Data/variables are hidden and can be access through getter and setter methods</td>
+    <td align="center">In Groovy, everything is public. There is no idea
+of private fields or methods, unlike Java</td>
+		<td align="center">Encapsulation exists in kotlin, just like Java. The private, public and protected keywords are used to set view encapsulation</td>
+  	<tr>
+    <td align="center">Inheritance</td>
+		<td align="center">Does not exist
+And will not be introduced
+The usual inheritance is presented by decorators (@)</td>
+		<td align="center">Uses extends keyword to inherit properties of a parent class (superclass)</td>
+    <td align="center">Uses extends keyword to inherit properties of a parent class (superclass)</td>
+		<td align="center">LBy default, Kotlin classes are final: they can’t be inherited.
+To make a class inheritable, mark it with the open keyword</td>
+	</tr>
+	</tr>
+  	<tr>
+    <td align="center">Polymorphism</td>
+		<td align="center">Does not exist
+Will be implemented (Ad hoc polymorphism)</td>
+		<td align="center">Java provides compile time and runtime polymorphisms</td>
+    <td align="center">n Groovy, the type of the object is considered at runtime, not the type
+of the reference so the method is found at runtime</td>
+		<td align="center">Kotlin supports two forms of polymorphisms in Java</td>
+	</tr>
+  </tr>
+  	<tr>
+    <td align="center">Data types</td>
+		<td align="center">Presented as Atom Data Type Objects
+Atom is an of acronym "Access to Memory.</td>
+		<td align="center">Provides both primitive and non- primitive data types</td>
+    <td align="center">n Groovy supports the same number of primitive types as Java</td>
+		<td align="center">Kotlin’s basic data types includes Java primitive data types</td>
+	</tr>
+</table>
+
 ### Setting up an enviroment
 First, clone [this](https://github.com/cqfn/eo) repo to your local machine and go
 to the `eo` directory (you will need
@@ -220,6 +282,10 @@ It is *important* to remember that each EO program must be ended with a new line
 
 Compile and run your program as it was [shown](#setting-up-an-enviroment).
 
+### Control questions
+
+
+## First mathematical operations
 
 
 
