@@ -481,7 +481,7 @@ Define:
 ![task1_1](docs/img/task1_1.png "task1_1")
 
 #### Task2
-Given x,y,z.
+Given A,B,K.
 Define:
 
 ![task1_2](docs/img/task1_2.png "task1_2")
@@ -493,10 +493,16 @@ Define:
 ![task1_3](docs/img/task1_3.png "task1_3")
 
 #### Task4
-Given L1,L2,L3.
+Given a,b,j,x.
 Define:
 
 ![task1_4](docs/img/task1_4.png "task1_4")
+
+#### Task5
+Given a,b,N.
+Define:
+
+![task1_5](docs/img/task1_5.png "task1_5")
 
 ### Control questions
 #TODO
