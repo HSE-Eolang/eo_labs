@@ -505,7 +505,12 @@ Define:
 ![task1_5](docs/img/task1_5.png "task1_5")
 
 ### Control questions
-#TODO
+- Objects in EO are?
+- How to output the program?
+- What is pow operation?
+- What does the “@” attribute mean?
+- How to format Strings in EO?
+
 
 ## How to work with arrays
 In order to get all the important reference material connected with arrays in EO check the [EO Reference](#the-eo-programming-language-reference).
