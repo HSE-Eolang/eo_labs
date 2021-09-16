@@ -309,10 +309,11 @@ Compile and run your program as it was [shown](#setting-up-an-enviroment).
 - What are the core EO principles?
 #TODO
 
-## First mathematical operations
-At first, to be able to produce mathematical programs in EO, it is *important* to examine the theoretical material from the [EO Reference](the-eo-programming-language-reference).
-### Theoretical materials for operations
+## First mathemetical operations
 
+At first, to be able to produce mathematical programs in EO, it is *important* to examine the theoretical material from the [EO Reference](the-eo-programming-language-reference).
+
+### Theoretical materials for operations
 Key materials for this section are:
 - [Objects](#objects)
 - [Attributes](#attributes)
