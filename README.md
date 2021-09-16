@@ -530,8 +530,53 @@ Key materials for this section are:
 ### Control questions
 #TODO
 
+## What are the data type objects in EO
+In order to get all the important reference material connected with data type objects in EO check the [EO Reference](#the-eo-programming-language-reference).
 
+### Theoretical materials for data type objects
 
+Key materials for this section are:
+#TODO
+
+### Self-practice
+#TODO
+
+### Control questions
+#TODO
+
+## Language mechanisms that exist
+In order to get all the important reference material connected with Language mechanisms in EO check the [EO Reference](#the-eo-programming-language-reference).
+
+### Theoretical materials for Language mechanisms 
+
+Key materials for this section are:
+#TODO
+
+### Self-practice
+#TODO
+
+### Control questions
+#TODO
+
+## How to add new data type objects
+#TODO
+
+### Theoretical materials for Language mechanisms 
+
+Key materials for this section are:
+#TODO
+
+### Self-practice
+#TODO
+
+### Control questions
+#TODO
+
+## Final project
+#TODO
+
+## Final test
+#TODO
 
 
 ## The EO Programming Language Reference
