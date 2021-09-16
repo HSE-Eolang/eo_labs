@@ -10,7 +10,7 @@ Moreover, this repository has the documentation on the language and its standard
   - [Analysis of the EO Concept and the Eo language](#analysis-of-the-eo-concept-and-the-eo-language)
   - [Eolang Object-Oriented Programming Principles](#eolang-object-oriented-programming-principles)
   - [Comparison of OOP principles with Java,Groovy,Kotlin](#comparison-of-oop-principles-with-java-groovy-kotlin)
-  - [Comparison of operators and expressions][#comparison-of-operators-and-exprressions]
+  - [Comparison of operators and expressions](#comparison-of-operators-and-exprressions)
   - [Setting up an enviroment](#setting-up-an-enviroment)
   - [Hello world!](#hello-world)
   - [Control questions](#control-questions)
