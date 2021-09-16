@@ -189,7 +189,6 @@ Polymorphism. There are no explicitly defined types in Eolang, the correspondenc
 Encapsulation. The inability to make the encapsulation barrier explicit is the main reason why Eolang does not hide information about the object structure. All attributes of an object are visible to any other object. In Eolang, the main goal of encapsulation - reducing the interconnectedness between objects - is achieved in a different way. In Eolang, the density of the relationship between objects is controlled at the assembly stage. At compile time, the compiler collects information about the relationships between objects and calculates the depth for each relationship.
 
 ### Comparison of OOP principles with Java,Groovy,Kotlin
-Table bellow shows the description of OOP comparison.
 
 <table border="2" align="center" width="50%" cellspacing="0">
 	<tr>
