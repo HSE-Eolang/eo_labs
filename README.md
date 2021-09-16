@@ -290,7 +290,20 @@ Compile and run your program as it was [shown](#setting-up-an-enviroment).
 #TODO
 
 ## First mathematical operations
+At first, to be able to produce mathematical programs in EO, it is *important* to examine the theoretical material from the [EO Reference](the-eo-programming-language-reference).
+### Theoretical materials for operations
 
+Key materials for this section are:
+- [Objects](#objects)
+- [Attributes](#attributes)
+- [`int` Data Type Object](#int-data-type-object)
+- [Command Line Interface Output](#command-line-interface-output)
+
+### Self-practice
+#TODO
+
+### Control questions
+#TODO
 
 
 
