@@ -361,6 +361,7 @@ Atom is an of acronym "Access to Memory.</td>
 	</tr>	
 </table>
 ### Setting up an enviroment
+
 First, clone [this](https://github.com/cqfn/eo) repo to your local machine and go
 to the `eo` directory (you will need
 [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
