@@ -606,13 +606,30 @@ In order to get all the important reference material connected with Language mec
 ### Theoretical materials for Language mechanisms 
 
 Key materials for this section are:
-#TODO
+- [Abstraction](#abstraction)
+- [Application](#application)
+- [Decoration](#decoartion)
+- [Dataization](#dataization)
 
 ### Self-practice
-#TODO
+
+#### Task1 
+
+Perform the EO analogue of [Abstract Fabric](https://refactoring.guru/design-patterns/abstract-factory) design pattern.
+
+#### Task2
+
+Perform the EO analogue of [Chain of responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility) design pattern.
+
+#### Task3
+
+Perform the EO analogue of [builder](https://refactoring.guru/design-patterns/builder) design pattern.
 
 ### Control questions
-#TODO
+
+- What are the differences between abstraction and application in EO?
+- How could you define the Decoration operation in EO?
+- What steps does dataization operation performs?
 
 ## How to add new data type objects
 #TODO
@@ -1690,7 +1707,6 @@ OUT>: int: 2, bool: false, string: Hey
 IN$: 
 ```
 ### Random Number Generation. `random`
-**Not implemented yet in this version of the transpiler!**
 
 *The EO Standard Object Collection* contains the `random` object for generating a cryptographically strong random number.  
 **Fully Qualified Name:** `org.org.eolang.random` (no aliasing or FQN reference required since the object is automatically imported).  
