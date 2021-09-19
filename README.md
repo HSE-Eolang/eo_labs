@@ -36,6 +36,7 @@ Moreover, this repository has the documentation on the language and its standard
   - [Control questions](#control-questions-5)
 - [Final project](#final-project)
 - [Final test](#final-test)
+- [Assessment methodology](#assessment-methodology)
 
 - [The EO Programming Language Reference](#the-eo-programming-language-reference)
   - [Objects](#objects)
@@ -577,6 +578,63 @@ Key materials for this section are:
 
 ## Final test
 #TODO
+
+## Assessment methodology
+
+Methodology for the formation of an assessment for the program implementation of the task
+
+The mark for written work (for work on computer programming) is formed by the following criteria
+
+Criteria for assigning marks for the program implementation of the task
+
+When performing a task on a computer, the criteria are divided into two groups: basic and additional. The main criteria determine the lower limit of the assessment on a ten-point scale within the corresponding assessment on a five-point scale.
+
+The main criteria are "EXCELLENT":
+
+8 points
+1. The program solves the problem and fully complies with the specification.
+2. The student can justify the adopted constructive decisions.
+3. The original text is documented contains information: the purpose of the program (condition of the problem), the number of the study group, the surname, and initials of the student, the date of completion, the purpose of the variables used, the purpose and parameters of the methods and constructions defined by the programmer.
+4. Provision is made for resolving the problem without restarting the program.
+
+9 points
+1. The program meets the criteria for obtaining an assessment of 8 points.
+2. The student can analyze alternative solutions to the problem.
+
+"GOOD":
+6 points
+1. The program solves the problem and meets the specification. Deviations from the specification are allowed in the implementation of secondary subtasks.
+2. The student can explain the constructive decisions made.
+
+7 points
+1. The program meets the criteria for obtaining an assessment of 6 points.
+2. The original text is documented.
+
+"SATISFACTORILY":
+4 points
+1. The program solves the problem but has deviations from the specification.
+ 2. The student can explain the functioning of the program from its source code.
+
+5 points
+1. The program meets the criteria for obtaining an assessment of 4 points.
+2. The original text is documented.
+
+"UNSATISFACTORY":
+
+1 point:
+1. The development of the program has not been completed.
+2. The program has syntax errors.
+
+2 points:
+1. The program does not solve the problem or does not correspond to the specification.
+2. The program terminates abnormally at least with some variants of the initial data.
+3. The student cannot explain the functioning of the program according to its source code.
+
+3 points:
+1. The program does not solve the problem at least for some variants of the initial data.
+2. The student can explain the functioning of the program from its source code.
+
+
 
 
 ## The EO Programming Language Reference
