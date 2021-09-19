@@ -406,7 +406,6 @@ Create new file lab1`*.eo` in sandbox folder, and enter the code below:
 [] > lab1
   stdout > @
     "Hello, world!"
-
 ``` 
 
 It is *important* to remember that each EO program must be ended with a new line without any symbols.
@@ -522,6 +521,8 @@ Key materials for this section are:
 - [`int` Data Type Object](#int-data-type-object)
 - [Command Line Interface Output](#command-line-interface-output)
 
+It is *important* to mention,that the current attributes for working with arrays might be changed,so fill free to check and update the reference.
+
 ### Self-practice
 
 #### Task 1
@@ -565,6 +566,8 @@ Key materials for this section are:
 - [data type objects](#data-type-objects)
 - [Command Line Interface Output](#command-line-interface-output)
 - [Objects](#objects)
+
+It is *important* to mention,that the current list of data type objects might be changed,so fill free to check and update the [reference](#the-eo-programming-language-reference).
 
 ### Self-practice
 
@@ -632,12 +635,55 @@ Perform the EO analogue of [builder](https://refactoring.guru/design-patterns/bu
 
 ## How to add new data type objects
 
+While developing advanced EO programs it will be nesessarry to add new objects to the currrent runtime pipeline.
+This process depends on the version of compiler cqfn/hse.
+
+In order to add new objects to *HSE* version you need to perform the following:
+Add Java entities to the [library](https://github.com/polystat/hse-runtime/tree/master/src/main/java/org/eolang). It is either a new class if the *object* was fundamentally new. 
+
+Or a new method inside an existing class if you add a new *attribute*.
+
+Actually, this is how all objects are built in *HSE-runtime*. 
+
+[Example_1](https://github.com/polystat/hse-runtime/blob/master/src/main/java/org/eolang/EOfloat.java):
+
+``` 
+***
+     * Multiplies this float by the {@code multiplier} free attribute
+     * @param multiplier a number by which this float is to be multiplied
+     * @return An object representing the product of this float and the {@code multiplier} free attribute
+     */
+    public EOfloat EOmul(EOObject multiplier) {
+        return new EOfloat(this.value * multiplier._getData().toFloat());
+    }
+```
+
+
+[Example_2](https://github.com/polystat/hse-runtime/blob/master/src/main/java/org/eolang/EOarray.java):
+
+``` 
+/**
+     * Evaluates {@code evaluatorObject} against each element of this array. Results of evaluations are not considered.
+     * This method always returns {@code true}. Basically, this method is useful to dataize (in other words, execute or
+     * evaluate) some routine against each element of an array when results are not needed.
+     *
+     * @param evaluatorObject an EO object that must have an {@code each} attribute which must have a free attribute
+     *                        that receives the current element being utilized by {@code evaluatorObject}.
+     *                        The name of the free attribute does not matter and may be chosen freely.
+     *                        The {@code each} attribute must bind an expression to be evaluated to {@code @}.
+     * @return {@code true}.
+     */
+    public EObool EOeach(EOObject evaluatorObject) {
+        for (EOObject current : _array) {
+            evaluatorObject._getAttribute("EOeach", current)._getData();
+        }
+        return new EObool(true);
+    }
+     
+```
 
 ### Self-practice
-#TODO
-
-### Control questions
-#TODO
+As a part of self-practice, it could be good if you will implement some attributes or objects from any existing functional languages. We strongly recommend looking at [*F#*](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections.html). Because this is one of the fundamental FP languages with a great collection of objects and attributes. 
 
 ## Assessment methodology
 
