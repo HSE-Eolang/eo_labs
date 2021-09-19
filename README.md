@@ -34,8 +34,6 @@ Moreover, this repository has the documentation on the language and its standard
   - [Theoretical materials for creating new objects in EO](#theoretical-materials-for-creating-new-objects)
   - [Self-practice](#self-practice-5)
   - [Control questions](#control-questions-5)
-- [Final project](#final-project)
-- [Final test](#final-test)
 - [Assessment methodology](#assessment-methodology)
 
 - [The EO Programming Language Reference](#the-eo-programming-language-reference)
@@ -421,7 +419,7 @@ Compile and run your program as it was [shown](#setting-up-an-enviroment).
 - What are the main differences between EO and Kotlin?
 - What are the main differences between EO and Groovy?
 - What are the core EO principles?
-#TODO
+
 
 ## First mathemetical operations
 
@@ -526,24 +524,81 @@ Key materials for this section are:
 - [Command Line Interface Output](#command-line-interface-output)
 
 ### Self-practice
-#TODO
+
+#### Task 1
+
+The names of 10 auto enterprises, the number of employees, and wage funds at each auto enterprise were given. Print in the form of a table a list of car companies where the wage fund per employee is less than the specified ZR value. Calculate the average for all 10 car companies.
+
+#### Task 2
+
+The lists of suppliers and consumers and the corresponding volumes of supplies and consumption are given. Print a table of suppliers and consumers with equal volumes of supply and consumption.  
+
+#### Task 3
+
+Ciphers, planned and real indicators of cargo turnover of 10 enterprises are given. Display a table with enterprises that have not fulfilled the plan, indicating the percentage of not fulfilling the plan.
+
+#### Task 4
+
+The names of 10 banks and interest rates on deposits in each are given. Display a list of banks with rates below the average rate for all 10 banks. Indicate the bank with the maximum rate. 
+
+#### Task 5
+
+Given arrays
+   N1, ..., N7 - names of car repair operations;
+   ST1, ..., ST7 - the cost of each of the operations.
+Display a list of operations, the cost of which ranges from S1 to S2 rubles. Which
+the operation has the maximum cost?
 
 ### Control questions
-#TODO
+- How to perform the output of array?
+- What are the main operations that helps to lead the result from N-1.
+- Is it possible to change arrays in EO?
+- What are main differences between arrays in EO/Java/C++?
 
 ## What are the data type objects in EO
 In order to get all the important reference material connected with data type objects in EO check the [EO Reference](#the-eo-programming-language-reference).
 
 ### Theoretical materials for data type objects
 
+*The EO Programming Language* and *The EO Standard Object Collection* defines these data type objects: `bool`, `int`, `float`, `string`, `char`. 
+
 Key materials for this section are:
-#TODO
+- [data type objects](#data-type-objects)
+- [Command Line Interface Output](#command-line-interface-output)
+- [Objects](#objects)
 
 ### Self-practice
-#TODO
+
+#### Task 1
+
+Given arrays L1...L7, and Y1..Y5
+
+Define:
+![task2_1](docs/img/task2_1.png "task2_1")
+
+#### Task 2
+
+Define:
+![task2_2](docs/img/task2_2.png "task2_2")
+
+#### Task 3
+
+Given arrays α1, α2, ..., α8; γ1, γ2, ..., γ5.
+
+Define:
+![task2_3](docs/img/task2_3.png "task2_3")
+
+
+#### Task 4
+
+Define:
+![task2_4](docs/img/task2_4.png "task2_4")
+
 
 ### Control questions
-#TODO
+- How to perform a mathemetical operation for a set of variables?
+- What are the differences between int Data type objects in EO and Java?
+- How many bool operations are there in EO?
 
 ## Language mechanisms that exist
 In order to get all the important reference material connected with Language mechanisms in EO check the [EO Reference](#the-eo-programming-language-reference).
@@ -573,12 +628,6 @@ Key materials for this section are:
 ### Control questions
 #TODO
 
-## Final project
-#TODO
-
-## Final test
-#TODO
-
 ## Assessment methodology
 
 Methodology for the formation of an assessment for the program implementation of the task
@@ -602,6 +651,7 @@ The main criteria are "EXCELLENT":
 2. The student can analyze alternative solutions to the problem.
 
 "GOOD":
+
 6 points
 1. The program solves the problem and meets the specification. Deviations from the specification are allowed in the implementation of secondary subtasks.
 2. The student can explain the constructive decisions made.
@@ -611,6 +661,7 @@ The main criteria are "EXCELLENT":
 2. The original text is documented.
 
 "SATISFACTORILY":
+
 4 points
 1. The program solves the problem but has deviations from the specification.
  2. The student can explain the functioning of the program from its source code.
