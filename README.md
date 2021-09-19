@@ -172,7 +172,6 @@ In OOP methodology, objects must manipulate data, and their implementation must 
  The EO concept does not imply primitive data types as they are not objects, which is contrary to the OOP concept.
 
 
-
  10. Rejection of the annotating code.
  The main problem with annotations is that they force
  developers to implement the functionality of the object outside the object, which is contrary to the principle of encapsulation in OOP.
@@ -632,12 +631,7 @@ Perform the EO analogue of [builder](https://refactoring.guru/design-patterns/bu
 - What steps does dataization operation performs?
 
 ## How to add new data type objects
-#TODO
 
-### Theoretical materials for Language mechanisms 
-
-Key materials for this section are:
-#TODO
 
 ### Self-practice
 #TODO
