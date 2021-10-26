@@ -36,8 +36,8 @@ Moreover, this repository has the documentation on the language and its standard
   - [Control questions](#control-questions-5)
 - [Assessment methodology](#assessment-methodology)
 - [Final tasks and tests](#final-tasks-and-tests)
-  - [Tasks](#final-tasks)
-  - [Tests](#final-tests)
+  - [Tasks](#Tasks)
+  - [Tests](#Tests)
 
 - [The EO Programming Language Reference](#the-eo-programming-language-reference)
   - [Objects](#objects)
